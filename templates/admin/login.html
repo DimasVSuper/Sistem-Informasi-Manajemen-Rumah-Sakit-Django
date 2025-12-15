@@ -1,0 +1,21 @@
+{% extends "admin/login.html" %}
+{% load i18n %}
+
+{% block branding %}
+<h1 id="site-name">
+    <a href="{% url 'admin:index' %}">SIMRS Admin</a>
+</h1>
+{% endblock %}
+
+{% block content %}
+{{ block.super }}
+
+<div style="text-align: center; margin-top: 20px; padding: 15px;">
+    <a href="/" style="color: #417690; text-decoration: none; font-size: 14px;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" style="vertical-align: middle; margin-right: 5px;">
+            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+        </svg>
+        Kembali ke Beranda
+    </a>
+</div>
+{% endblock %}
