@@ -1,5 +1,16 @@
 {% extends "admin/logged_out.html" %}
-{% load i18n %}
+{% load i18n static %}
+
+{% block extrastyle %}
+{{ block.super }}
+<style>
+    body {
+        background: url('{% static "img/bg-holographic.webp" %}') no-repeat center center fixed;
+        background-size: cover;
+        min-height: 100vh;
+    }
+</style>
+{% endblock %}
 
 {% block content %}
 <p>{% trans "Thanks for spending some quality time with the web site today." %}</p>
