@@ -106,7 +106,10 @@ Sistem-Informasi-Manajemen-Rumah-Sakit-Djanggo/
 ├── 📁 media/                        # User uploaded files (documents, patient photos)
 │
 ├── 📁 templates/                    # HTML Templates
-│   └── landing.html                 # Professional landing page (Bootstrap 5)
+│   ├── landing.html                 # Professional landing page (Bootstrap 5)
+│   └── admin/                       # Custom Django admin templates
+│       ├── login.html               # Custom login with back to home link
+│       └── logged_out.html          # Custom logout with back to home link
 │
 ├── 📁 docs/                         # Documentation
 │   ├── Jurnal.md                    # Hospital Management System Journal
@@ -119,6 +122,7 @@ Sistem-Informasi-Manajemen-Rumah-Sakit-Djanggo/
 ## Key Features
 
 ✅ **Admin-Only Interface** - All CRUD operations via Django admin
+✅ **Custom Admin Templates** - Login/logout pages with back to home link
 ✅ **Landing Page** - Professional Bootstrap 5 landing page with carousel
 ✅ **10 Django Apps** - Complete hospital management modules
 ✅ **Custom User Model** - 7 roles: admin, dokter, perawat, apoteker, kasir, pasien, lab_staff
