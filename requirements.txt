@@ -1,7 +1,8 @@
+Django==5.0
 asgiref==3.11.0
 sqlparse==0.5.4
 tzdata==2025.3
-djanggo
-python-dotenv
-mysql-connector-python
-mysqlclient
+python-dotenv==1.0.0
+mysqlclient==2.2.0
+Pillow==10.0.0
+faker==38.2.0
