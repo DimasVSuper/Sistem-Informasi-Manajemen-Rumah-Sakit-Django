@@ -113,7 +113,9 @@ Sistem-Informasi-Manajemen-Rumah-Sakit-Djanggo/
 │
 ├── 📁 docs/                         # Documentation
 │   ├── Jurnal.md                    # Hospital Management System Journal
-│   └── StructureFolder.md           # This file
+│   ├── MVP.md                       # Minimum Viable Product specification
+│   ├── StructureFolder.md           # This file (project structure)
+│   └── TimeZone.md                  # Timezone configuration guide for Django + MySQL
 │
 └── 📁 venv/                         # Python Virtual Environment
 
