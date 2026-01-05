@@ -24,6 +24,66 @@ Aplikasi web untuk manajemen operasional rumah sakit berbasis Django.
 
 ---
 
+## Quick Setup
+
+### Prerequisites
+- Python 3.10+
+- MySQL 8.0+
+- Git
+
+### Installation
+1. **Clone Repository**
+   ```bash
+   git clone <repo-url>
+   cd Sistem-Informasi-Manajemen-Rumah-Sakit-Django
+   ```
+
+2. **Setup Virtual Environment**
+   ```bash
+   python -m venv venv
+   # Windows
+   venv\Scripts\activate
+   # Linux/Mac
+   source venv/bin/activate
+   ```
+
+3. **Install Dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. **Setup Database**
+   - Create MySQL database: `rumah_sakit_db`
+   - Copy `.env.example` to `.env` and update credentials
+
+5. **Run Migrations**
+   ```bash
+   python manage.py migrate
+   ```
+
+6. **Create Superuser**
+   ```bash
+   python manage.py createsuperuser
+   ```
+
+7. **Seed Data (Optional)**
+   ```bash
+   python manage.py seed_data
+   ```
+
+8. **Run Server**
+   ```bash
+   python manage.py runserver
+   ```
+
+   Akses: `http://127.0.0.1:8000/` (Landing) | `http://127.0.0.1:8000/admin/` (Admin)
+
+### Troubleshooting
+- Jika error timezone, lihat `docs/TimeZone.md`
+- Pastikan MySQL running dan credentials benar
+
+---
+
 ## Fitur Utama
 
 - **Manajemen Pasien** - Data pasien, riwayat medis, asuransi
