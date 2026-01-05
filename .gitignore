@@ -1,5 +1,7 @@
 venv/
 .env
+Scripts/
+pyvenv.cfg
 
 # Python
 __pycache__/
